@@ -22,19 +22,15 @@ int calculatePairs(int n, vector<int> &arr)
 
             if(a == b)
             {
-                // combination of same elements
                 int c = it1.second;
                 sumFreq[a + b] += (c * (c - 1)) / 2;
             }
             else if(a < b)
             {
-                // different elements
                 sumFreq[a + b] += it1.second * it2.second;
             }
         }
     }
-
-    // Step 3: find max frequency
     int maxFreq = 0;
     for(auto it : sumFreq)
     {
