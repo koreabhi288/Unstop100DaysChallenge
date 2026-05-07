@@ -20,8 +20,7 @@ int dfs(int node, vector<pair<int,int>> &tree)
 int main()
 {
     int n;
-    cin >> n;
-
+    cin>>n;
     vector<pair<int,int>> tree(n + 1);
 
     for(int i = 1; i <= n; i++)
